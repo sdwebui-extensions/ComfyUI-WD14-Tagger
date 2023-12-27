@@ -6,6 +6,7 @@ import inspect
 import aiohttp
 from server import PromptServer
 from tqdm import tqdm
+from folder_paths import models_dir
 
 config = None
 
@@ -30,7 +31,7 @@ def log(message, type=None, always=False):
 
 
 def get_ext_dir(subpath=None, mkdir=False):
-    dir = os.path.dirname(__file__)
+    dir = os.path.dirname(models_dir)
     if subpath is not None:
         dir = os.path.join(dir, subpath)
 
