@@ -71,7 +71,7 @@ def get_extension_config(reload=False):
     if not os.path.exists(config_path):
         config_path = get_ext_dir("pysssss.json")
     if not os.path.exists(config_path):
-        config_path = './pysssss.json'
+        config_path = '/code/ComfyUI/custom_nodes/ComfyUI-WD14-Tagger/pysssss.json'
 
     if not os.path.exists(config_path):
         log("Missing pysssss.json and pysssss.user.json, this extension may not work correctly. Please reinstall the extension.",
